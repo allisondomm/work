@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>
+        LOGIN
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <ion-item>
+        <ion-label color="primary" stacked>Email:</ion-label>
+        <ion-input type="email" placeholder="Email Input"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label color="primary" stacked>Password:</ion-label>
+        <ion-input type="email" placeholder="Password Input"></ion-input>
+    </ion-item>
+    
+    <button ion-button round (click)="navigateToMain()">Login</button>
+    <button ion-button round clear=true color = primary>Forgot Password?</button>
+  </ion-content>

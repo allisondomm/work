@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Main Screen</ion-title> 
+    <ion-buttons end>
+        <button ion-button (click)=navigateToProfile()>profile</button>
+        <button ion-button (click)=logout()>logout</button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <button ion-button (click)="navigateToSearch()">Search</button>
+    <ion-slides loop="true" centeredSlides="true">
+      <ion-slide><button ion-button (click)=navigateToFavorites()>Favorites</button></ion-slide>
+      <ion-slide><button ion-button (click)=navigateToLists()>Lists</button></ion-slide>
+      <ion-slide><button ion-button (click)=navigateToOrderHistory()>Order History</button></ion-slide>
+      <ion-slide><button ion-button (click)=navigateToOnlineShops()>Online Shops</button></ion-slide>
+    </ion-slides>
+    <button ion-button (click)="navigateToMap()">Map</button>
+</ion-content>
