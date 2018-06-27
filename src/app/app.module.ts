@@ -24,6 +24,7 @@ import { FilePath } from '@ionic-native/file-path';
 import { Camera } from '@ionic-native/camera';
 
 import { ComponentsModule } from '../components/components.module';
+import { SearchResultsPage } from '../pages/search-results/search-results';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { ComponentsModule } from '../components/components.module';
     FavoritesPage,
     OrderHistoryPage,
     OnlineShopsPage,
-    FavoritesPage
+    FavoritesPage,
+    SearchResultsPage
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,8 @@ import { ComponentsModule } from '../components/components.module';
     FavoritesPage,
     OrderHistoryPage,
     OnlineShopsPage,
-    FavoritesPage
+    FavoritesPage,
+    SearchResultsPage
   ],
   providers: [
     StatusBar,

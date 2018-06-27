@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import { GoogleMapsComponent } from './google-maps/google-maps';
+import { GoogleMapComponent } from './google-map/google-map';
 @NgModule({
-	declarations: [GoogleMapsComponent],
+	declarations: [GoogleMapComponent],
 	imports: [],
-	exports: [GoogleMapsComponent]
+	exports: [GoogleMapComponent]
 })
 export class ComponentsModule {}
