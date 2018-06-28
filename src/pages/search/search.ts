@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { MainScreenPage } from '../main-screen/main-screen';
 import { SearchResultsPage } from '../search-results/search-results';
+import { CartPage } from '../cart/cart';
 
 
 @IonicPage()
@@ -21,6 +22,10 @@ export class SearchPage {
 
   navigateToSearchResults(){
     this.navCtrl.push(SearchResultsPage);
+  }
+
+  cart(){
+    this.navCtrl.push(CartPage);
   }
 
 }

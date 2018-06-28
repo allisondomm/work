@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import{LoginPage} from "../login/login";
-import { NewAccountPage } from '../newAccount/newAccount';
+import { CreateProfilePage } from '../create-profile/create-profile';
 
 
 @Component({
@@ -21,7 +21,7 @@ export class HomePage {
 
   navigateToNewAccount(){
     console.log("Navigating...");
-    this.navCtrl.push(NewAccountPage);
+    this.navCtrl.push(CreateProfilePage);
   }
 
 }

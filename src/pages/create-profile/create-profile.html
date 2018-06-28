@@ -6,33 +6,53 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>Create Your Profile</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="content">
     <ion-item>
-        <ion-label color="primary" stacked>Full Name:</ion-label>
-        <ion-input type="email" placeholder="Name Input"></ion-input>
+        <ion-label color="primary" stacked>First Name:</ion-label>
+        <ion-input type="email" placeholder="First Name Input" [(ngModel)]="firstName" name="firstName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary" stacked>Last Name:</ion-label>
+        <ion-input type="email" placeholder="Last Name Input" [(ngModel)]="lastName" name="lastName"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label color="primary" stacked>Username:</ion-label>
-        <ion-input type="email" placeholder="Username"></ion-input>
+        <ion-input type="email" placeholder="Username" [(ngModel)]="username" name="username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary" stacked>Email:</ion-label>
+        <ion-input type="email" placeholder="Email Input" [(ngModel)]="email" name="email"></ion-input>
     </ion-item>
     
     <ion-item>
-        <ion-label color="primary" stacked>Default Location:</ion-label>
-        <ion-input type="email" placeholder="Location"></ion-input>
+        <ion-label color="primary" stacked>Password:</ion-label>
+        <ion-input type="email" placeholder="Password Input" [(ngModel)]="password" name="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Re-enter Password:</ion-label>
+      <ion-input type="email" placeholder="Password Input" [(ngModel)]="passwordCheck" name="passwordCheck"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+        <ion-label color="primary" stacked>Default Zip Code:</ion-label>
+        <ion-input type="email" placeholder="Zip Code" [(ngModel)]="zipcode" name="zipcode"></ion-input>
     </ion-item>
 
     <ion-item>
         <ion-label color="primary" stacked>Add Photo:</ion-label>
     </ion-item>
 
-    <button ion-button color = "secondary" (click) = "showToast()"> Done! </button>
+    <button ion-button color = "primary" outline (click) = "showToast()"> Done! </button>
 
 </ion-content>

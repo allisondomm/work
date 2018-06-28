@@ -1,7 +1,7 @@
 
 <ion-header>
 
-    <ion-navbar>
+    <ion-navbar color="secondary">
         <ion-title>Profile</ion-title>
         <ion-buttons end>
             <button ion-button (click)=back()>go back</button>
@@ -13,17 +13,17 @@
 
 <ion-content padding>
     <ion-item>
-        <ion-label>Name</ion-label>
-        <ion-input>...</ion-input>
+        <ion-label color="primary">Name</ion-label>
+        <p color="dark">{{name}}</p>
       </ion-item>
 
     <ion-item>
-        <ion-label>UserName</ion-label>
-        <ion-input>...</ion-input>
+        <ion-label color="primary">UserName</ion-label>
+        <p color="dark">{{username}}</p>
       </ion-item>
 
     <ion-item>
-          <ion-label>Zip Code</ion-label>
-          <ion-input>...</ion-input>
+          <ion-label color="primary">Default Zip Code</ion-label>
+          <p color="dark">{{zipcode}}</p>
     </ion-item>
 </ion-content>

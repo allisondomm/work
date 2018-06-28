@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SelectMultipleControlValueAccessor } from '@angular/forms';
 import { MapPage } from '../map/map';
-import { CartPage } from '../cart/cart';
-import { MainScreenPage } from '../main-screen/main-screen';
 
 /**
- * Generated class for the SearchResultsPage page.
+ * Generated class for the CartPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -13,28 +12,20 @@ import { MainScreenPage } from '../main-screen/main-screen';
 
 @IonicPage()
 @Component({
-  selector: 'page-search-results',
-  templateUrl: 'search-results.html',
+  selector: 'page-cart',
+  templateUrl: 'cart.html',
 })
-export class SearchResultsPage {
+export class CartPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  goToWebsite(){
+
+  }
+
   goToMap(){
     this.navCtrl.push(MapPage);
-  }
-
-  goToWebsite(){
-    
-  }
-
-  cart(){
-    this.navCtrl.push(CartPage);
-  }
-
-  back(){
-    this.navCtrl.push(MainScreenPage)
   }
 
 }

@@ -35,10 +35,10 @@ $app-direction: ltr;
 
 $colors: (
   primary:    #8d017a,
-  secondary:  #e7b717,
+  secondary:  #ffce2d,
   danger:     #fff,
-  light:      #f4f4f4,
-  dark:       #222
+  light:      rgb(255, 225, 241),
+  dark:       rgb(224, 20, 180)
 );
 
 
@@ -86,3 +86,4 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+

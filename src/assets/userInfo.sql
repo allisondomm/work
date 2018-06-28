@@ -1,0 +1,1 @@
+CREATE TABLE IF NOT EXISTS user(id INTEGER PRIMARY KEY AUTOINCREMENT, fullname TEXT, username TEXT, pw TEXT, email TEXT, zipcode TEXT);

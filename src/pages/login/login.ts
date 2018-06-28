@@ -7,14 +7,24 @@ import { MainScreenPage } from '../main-screen/main-screen';
   templateUrl: 'login.html'
 })
 export class LoginPage {
+    username='';
+    password='';
+
 
   constructor(public navCtrl: NavController) {
-
+     
   }
 
   navigateToMain(){
+      console.log(this.username);
+      console.log(this.password);
       console.log("navigating...");
       this.navCtrl.push(MainScreenPage);
+  }
+
+  login(){
+      //check database to see if user exists
+      //if user exists then call profile.setInfo() and navigateToMain()
   }
   
 

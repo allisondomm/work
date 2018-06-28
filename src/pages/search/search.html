@@ -3,34 +3,35 @@
         <ion-title>SHOP</ion-title>
         <ion-buttons end>
             <button ion-button (click)=back()>go back</button>
-          </ion-buttons>
-      </ion-navbar>
-    
-    </ion-header>
-    
-    
-    <ion-content padding>
-        <ion-item> 
-            <ion-label color="primary" stacked>Zip Code:</ion-label>
-            <ion-input type="email" placeholder="Zip Code"></ion-input>
-        </ion-item>
-    
-        <ion-item>
-            <ion-label>Category</ion-label>
-            <ion-select [(ngModel)]="category">
-              <ion-option value="any">Anything</ion-option>
-              <ion-option value="jewelry">Jewelry</ion-option>
-              <ion-option value="clothing">Clothing</ion-option>
-              <ion-option value="electronics">Electronics</ion-option>
-              <ion-option value="home">Home Goods</ion-option>
-              <ion-option value="shoes">Shoes</ion-option>
-              <ion-option value="electronics">Electronics</ion-option>
-              <ion-option value="books">Books</ion-option>
-              <ion-option value="movies">Movies and Entertainment</ion-option>
-            </ion-select>
-          </ion-item>
+            <button ion-button (click)=cart()>cart</button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
 
 
-    <button ion-button (click)="navigateToSearchResults()">Search</button>
-    </ion-content>
-  
+<ion-content padding>
+    <ion-item>
+        <ion-label color="primary" stacked>If you would like to use a zip code different from your default one, please enter it below:</ion-label>
+        <ion-input type="email" placeholder=""></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary">Category</ion-label>
+        <ion-select [(ngModel)]="category">
+            <ion-option value="any">Anything</ion-option>
+            <ion-option value="jewelry">Jewelry</ion-option>
+            <ion-option value="clothing">Clothing</ion-option>
+            <ion-option value="electronics">Electronics</ion-option>
+            <ion-option value="home">Home Goods</ion-option>
+            <ion-option value="shoes">Shoes</ion-option>
+            <ion-option value="electronics">Electronics</ion-option>
+            <ion-option value="books">Books</ion-option>
+            <ion-option value="movies">Movies and Entertainment</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-title text-center>
+        <button ion-button outline full (click)="navigateToSearchResults()">Search</button>
+    </ion-title>
+</ion-content>

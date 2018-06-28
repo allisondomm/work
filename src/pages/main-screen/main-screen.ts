@@ -10,6 +10,7 @@ import { FavoritesPage } from '../favorites/favorites';
 import { ListsPage } from '../lists/lists';
 import { OrderHistoryPage } from '../order-history/order-history';
 import { OnlineShopsPage } from '../online-shops/online-shops';
+import { CartPage } from '../cart/cart';
 
 
 @IonicPage()
@@ -54,6 +55,10 @@ export class MainScreenPage {
 
   logout() {
     this.navCtrl.push(HomePage);
+  }
+
+  cart(){
+    this.navCtrl.push(CartPage);
   }
 
 }

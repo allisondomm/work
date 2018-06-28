@@ -2,42 +2,44 @@
 
   <ion-navbar>
     <ion-title>SHOP</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)=back()>go back</button>
+      <button ion-button (click)=cart()>cart</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <ion-list>
-        <ion-item>
-          <h2>store name</h2>
-          <h3>Address</h3>
-          <button ion-button (click)="goToWebsite()">shop</button>
-          <button ion-button (click)="goToMap()">view on map</button>
-        </ion-item>
-      </ion-list>
-      <ion-list>
-          <ion-item>
-            <h2>store name</h2>
-            <h3>Address</h3>
-            <button ion-button (click)="goToWebsite()">shop</button>
-            <button ion-button (click)="goToMap()">view on map</button>
-          </ion-item>
-        </ion-list>
-        <ion-list>
-            <ion-item>
-              <h2>store name</h2>
-              <h3>Address</h3>
-              <button ion-button (click)="goToWebsite()">shop</button>
-              <button ion-button (click)="goToMap()">view on map</button>
-            </ion-item>
-          </ion-list>
-          <ion-list>
-              <ion-item>
-                <h2>store name</h2>
-                <h3>Address</h3>
-                <button ion-button (click)="goToWebsite()">shop</button>
-                <button ion-button (click)="goToMap()">view on map</button>
-              </ion-item>
-            </ion-list>
+  <ion-list>
+    <h1>CATEGORY</h1>
+    <ion-item>
+      <h2>store name</h2>
+      <h3>Address</h3>
+      <button ion-button (click)="goToWebsite()">shop</button>
+      <button ion-button (click)="goToMap()">view on map</button>
+    </ion-item>
+  
+    <ion-item>
+      <h2>store name</h2>
+      <h3>Address</h3>
+      <button ion-button (click)="goToWebsite()">shop</button>
+      <button ion-button (click)="goToMap()">view on map</button>
+    </ion-item>
+  
+    <ion-item>
+      <h2>store name</h2>
+      <h3>Address</h3>
+      <button ion-button (click)="goToWebsite()">shop</button>
+      <button ion-button (click)="goToMap()">view on map</button>
+    </ion-item>
+  
+    <ion-item>
+      <h2>store name</h2>
+      <h3>Address</h3>
+      <button ion-button (click)="goToWebsite()">shop</button>
+      <button ion-button (click)="goToMap()">view on map</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

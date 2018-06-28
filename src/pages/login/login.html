@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar color="primary">
       <ion-title>
         LOGIN
       </ion-title>
@@ -8,13 +8,13 @@
   
   <ion-content padding>
     <ion-item>
-        <ion-label color="primary" stacked>Email:</ion-label>
-        <ion-input type="email" placeholder="Email Input"></ion-input>
+        <ion-label color="primary" stacked>Username:</ion-label>
+        <ion-input type="email" placeholder="Username Input" [(ngModel)]="username" name="username"></ion-input>
     </ion-item>
     
     <ion-item>
         <ion-label color="primary" stacked>Password:</ion-label>
-        <ion-input type="email" placeholder="Password Input"></ion-input>
+        <ion-input type="email" placeholder="Password Input" [(ngModel)]="password" name="password"></ion-input>
     </ion-item>
     
     <button ion-button round (click)="navigateToMain()">Login</button>
